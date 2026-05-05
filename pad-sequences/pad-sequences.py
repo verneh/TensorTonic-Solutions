@@ -38,10 +38,4 @@ def pad_sequences(seqs, pad_value=0, max_len=None):
         padded[i, :length] = seq[:length]
     
     return padded
-    """
-    Returns: np.ndarray of shape (N, L) where:
-      N = len(seqs)
-      L = max_len if provided else max(len(seq) for seq in seqs) or 0
-    """
-    # Your code here
-    pass
+   
